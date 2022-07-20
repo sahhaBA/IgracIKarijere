@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5762D4F8-D29B-4215-B5D7-4F44AB65DC69}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IGRACiKARIJERE</RootNamespace>
+    <AssemblyName>IGRACiKARIJERE</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Program Files\sahha Company\IgracIkarijereClient\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A19BA3A9A8ABBBD322EAF07E3DC04E3A3FA4D120</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>IGRACiKARIJERE_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.112.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.112.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.112.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.112.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.112.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.112.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetListaIgraca.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetListaIgraca.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetsSTADIONI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetsSTADIONI.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSetKlubovi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSetKlubovi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSZeuzetiStadioni.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSZeuzetiStadioni.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodajStadion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodajStadion.Designer.cs">
+      <DependentUpon>frmDodajStadion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodajIgraca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodajIgraca.Designer.cs">
+      <DependentUpon>frmDodajIgraca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodajKlub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodajKlub.Designer.cs">
+      <DependentUpon>frmDodajKlub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIgraci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIgraci.Designer.cs">
+      <DependentUpon>frmIgraci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIgraciKluboviKarijera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIgraciKluboviKarijera.Designer.cs">
+      <DependentUpon>frmIgraciKluboviKarijera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKlubovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKlubovi.Designer.cs">
+      <DependentUpon>frmKlubovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoading.Designer.cs">
+      <DependentUpon>frmLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModifikacijaIgracaKluba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModifikacijaIgracaKluba.Designer.cs">
+      <DependentUpon>frmModifikacijaIgracaKluba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrikazIzvjestaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrikazIzvjestaja.Designer.cs">
+      <DependentUpon>frmPrikazIzvjestaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrikazIzvjestajaKlubovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrikazIzvjestajaKlubovi.Designer.cs">
+      <DependentUpon>frmPrikazIzvjestajaKlubovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrikazIzvjestajaListeIgraca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrikazIzvjestajaListeIgraca.Designer.cs">
+      <DependentUpon>frmPrikazIzvjestajaListeIgraca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrikazIzvjestajaListeStadiona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrikazIzvjestajaListeStadiona.Designer.cs">
+      <DependentUpon>frmPrikazIzvjestajaListeStadiona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrikazIzvjestajaZauzetiStadioni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrikazIzvjestajaZauzetiStadioni.Designer.cs">
+      <DependentUpon>frmPrikazIzvjestajaZauzetiStadioni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStadioni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStadioni.Designer.cs">
+      <DependentUpon>frmStadioni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmZauzetiStadioni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmZauzetiStadioni.Designer.cs">
+      <DependentUpon>frmZauzetiStadioni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlavnaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlavnaForma.Designer.cs">
+      <DependentUpon>GlavnaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Igraci.cs" />
+    <Compile Include="IgraciKlubovi.cs" />
+    <Compile Include="ImageHelper.cs" />
+    <Compile Include="Klubovi.cs" />
+    <Compile Include="KonekcijaNaBazu.cs" />
+    <Compile Include="MboxHelper.cs" />
+    <Compile Include="PotvrdiSifru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PotvrdiSifru.Designer.cs">
+      <DependentUpon>PotvrdiSifru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pozicije.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Spolovi.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Stadioni.cs" />
+    <Compile Include="ZauzetiStadioni.cs" />
+    <EmbeddedResource Include="frmDodajStadion.resx">
+      <DependentUpon>frmDodajStadion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodajIgraca.resx">
+      <DependentUpon>frmDodajIgraca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodajKlub.resx">
+      <DependentUpon>frmDodajKlub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIgraci.resx">
+      <DependentUpon>frmIgraci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIgraciKluboviKarijera.resx">
+      <DependentUpon>frmIgraciKluboviKarijera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKlubovi.resx">
+      <DependentUpon>frmKlubovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoading.resx">
+      <DependentUpon>frmLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModifikacijaIgracaKluba.resx">
+      <DependentUpon>frmModifikacijaIgracaKluba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrikazIzvjestaja.resx">
+      <DependentUpon>frmPrikazIzvjestaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrikazIzvjestajaKlubovi.resx">
+      <DependentUpon>frmPrikazIzvjestajaKlubovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrikazIzvjestajaListeIgraca.resx">
+      <DependentUpon>frmPrikazIzvjestajaListeIgraca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrikazIzvjestajaListeStadiona.resx">
+      <DependentUpon>frmPrikazIzvjestajaListeStadiona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrikazIzvjestajaZauzetiStadioni.resx">
+      <DependentUpon>frmPrikazIzvjestajaZauzetiStadioni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStadioni.resx">
+      <DependentUpon>frmStadioni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmZauzetiStadioni.resx">
+      <DependentUpon>frmZauzetiStadioni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlavnaForma.resx">
+      <DependentUpon>GlavnaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izvjestaj.rdlc" />
+    <EmbeddedResource Include="IzvjestajKlubovi.rdlc" />
+    <EmbeddedResource Include="IzvjestajListaStadiona.rdlc" />
+    <EmbeddedResource Include="PotvrdiSifru.resx">
+      <DependentUpon>PotvrdiSifru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IzvjestajListaIgraca.rdlc" />
+    <EmbeddedResource Include="Resources\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ZauzetiStadioni.rdlc" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetListaIgraca.xsc">
+      <DependentUpon>DataSetListaIgraca.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetListaIgraca.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetListaIgraca.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetListaIgraca.xss">
+      <DependentUpon>DataSetListaIgraca.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetsSTADIONI.xsc">
+      <DependentUpon>DataSetsSTADIONI.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetsSTADIONI.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetsSTADIONI.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetsSTADIONI.xss">
+      <DependentUpon>DataSetsSTADIONI.xsd</DependentUpon>
+    </None>
+    <None Include="DSetKlubovi.xsc">
+      <DependentUpon>DSetKlubovi.xsd</DependentUpon>
+    </None>
+    <None Include="DSetKlubovi.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSetKlubovi.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSetKlubovi.xss">
+      <DependentUpon>DSetKlubovi.xsd</DependentUpon>
+    </None>
+    <None Include="DSZeuzetiStadioni.xsc">
+      <DependentUpon>DSZeuzetiStadioni.xsd</DependentUpon>
+    </None>
+    <None Include="DSZeuzetiStadioni.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSZeuzetiStadioni.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSZeuzetiStadioni.xss">
+      <DependentUpon>DSZeuzetiStadioni.xsd</DependentUpon>
+    </None>
+    <None Include="IGRACiKARIJERE_TemporaryKey.pfx" />
+    <None Include="IgraciKlubovi.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stadion.ico" />
+    <None Include="Resources\Avosoft-Warm-Toolbar-Print.ico" />
+    <None Include="Resources\football.ico" />
+    <None Include="Resources\Icons8-Ios7-Sports-Football-2.ico" />
+    <None Include="Resources\Klubs.ico" />
+    <None Include="Resources\letter-c-icon-png-8896-Windows.ico" />
+    <None Include="Resources\letter-c-icon-png-8901-Windows.ico" />
+    <None Include="Resources\passIco.ico" />
+    <None Include="Resources\trofej.jpg" />
+    <None Include="Resources\Cristiano-Ronaldo-Wallpaper-5.jpg" />
+    <None Include="Resources\eye.png" />
+    <None Include="Resources\GIF.gif" />
+    <None Include="Resources\GlMeni.jpg" />
+    <None Include="Resources\H6BuNaY.jpg" />
+    <None Include="Resources\MesiGo.jpg" />
+    <None Include="Resources\pass.jpg" />
+    <None Include="Resources\rona.png" />
+    <None Include="Resources\Stadioni.png" />
+    <None Include="Resources\Klubovi.jpg" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="IGRACiKARIJERE.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.112.0\build\net46\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.112.0\build\net46\System.Data.SQLite.Core.targets'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.112.0\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.112.0\build\net46\System.Data.SQLite.Core.targets')" />
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+</Project>
